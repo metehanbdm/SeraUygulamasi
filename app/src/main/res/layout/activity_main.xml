@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!--NODE1-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="NODE 1"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#43A047"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="#43A047"
+                    android:text="Voltage:"/>
+
+                <EditText
+                    android:id="@+id/MAINACTIVITY_NODE1_VOLTAGE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:gravity="center_horizontal"
+                    android:focusable="false"
+                    android:text="3.2V"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="#43A047"
+                    android:text="Temp:"/>
+
+                <EditText
+                    android:id="@+id/MAINACTIVITY_NODE1_TEMP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:gravity="center_horizontal"
+                    android:text="29C"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="#43A047"
+                    android:text="Light:"/>
+
+                <EditText
+                    android:id="@+id/MAINACTIVITY_NODE1_LIGHT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:gravity="center_horizontal"
+                    android:text="200L"/>
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp">
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TableLayout
+                        android:id="@+id/MAINACTIVTY_TABLELAYOUT_NODE1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    </TableLayout>
+                </ScrollView>
+            </HorizontalScrollView>
+
+
+
+            <!--NODE 2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#43A047"
+                    android:text="NODE 2"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="#43A047"
+                    android:text="Voltage:"/>
+
+                <EditText
+                    android:id="@+id/MAINACTIVITY_NODE2_VOLTAGE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:gravity="center_horizontal"
+                    android:focusable="false"
+                    android:text="3.2V"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="#43A047"
+                    android:text="Temp:"/>
+
+                <EditText
+                    android:id="@+id/MAINACTIVITY_NODE2_TEMP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:gravity="center_horizontal"
+                    android:text="29C"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="#43A047"
+                    android:text="Light:"/>
+
+                <EditText
+                    android:id="@+id/MAINACTIVITY_NODE2_LIGHT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:gravity="center_horizontal"
+                    android:text="200L"/>
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp">
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TableLayout
+                        android:id="@+id/MAINACTIVTY_TABLELAYOUT_NODE2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    </TableLayout>
+                </ScrollView>
+            </HorizontalScrollView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/MAINACTIVITY_EDITTEXT_IP"
+                    android:layout_width="127dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:hint="192.168.1.4"
+                    android:inputType="phone" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="154dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickedButton"
+                    android:text="YENILE"
+                    android:textColor="#43A047" />
+            </LinearLayout>
+
+
+            </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
